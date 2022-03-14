@@ -1,6 +1,6 @@
 let nome: string = 'Igor Ribeiro';
 
-let idade: number = 20;
+let idade: number = 20;   // 
 
 let programador: boolean = true;
 
