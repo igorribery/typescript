@@ -1,12 +1,10 @@
-let numero1 = document.getElementById('numero1') as HTMLInputElement;
-let numero2 = document.getElementById('numero2') as HTMLInputElement;
-let botao = document.getElementById('calcular');
-let res = document.getElementById('resultado');
+let nome: string = 'Igor Ribeiro';
 
-function calcular(n1: number, n2: number) {
-    return n1 + n2;
-}
+let idade: number = 20;
 
-botao.addEventListener('click', function() {
-    res.innerHTML = calcular( +numero1.value, +numero2.value).toString(); // "+" define que recebe valor INTEIRO
-});
+let programador: boolean = true;
+
+// sempre utiliziar as tipagem em Minusculo 
+// string em vez de String
+// number em vez de Number
+// boolean em vez de Boolean
