@@ -1,10 +1,3 @@
-let nome: string = 'Igor Ribeiro';
+let nomes: string[] = ['bonieky', 'pedro', 'luiz', 'igor'];  // string[]  vai definir q o array só irá receber strings
 
-let idade: number = 20;   // 
-
-let programador: boolean = true;
-
-// sempre utiliziar as tipagem em Minusculo 
-// string em vez de String
-// number em vez de Number
-// boolean em vez de Boolean
+let idades: number[] = [90, 15, 20, 30]; // number[] vai definir q o array só ira receber number
