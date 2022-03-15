@@ -1,15 +1,9 @@
-function resumo(usuario: {nome: string, idade?: number}) { // colocar um item opcional "?" logo apos da propriedade
-    if(usuario.idade !== undefined) {
-    return `Olá ${usuario.nome}, tudo bem? você tem ${usuario.idade} anos`;
+function mostrarIdade(idade: string | number) {
+    if(typeof idade === 'string') {
+    console.log( idade.toUpperCase() )
     } else {
-        return `Olá ${usuario.nome}, tudo bem?`;
+        console.log(idade);
     }
 }
-
-let u = {
-    nome: 'igor', 
-    idade: 20
-
-};
-
-resumo(u);
+mostrarIdade(20);
+mostrarIdade('20');
