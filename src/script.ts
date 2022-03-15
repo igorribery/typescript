@@ -1,3 +1,6 @@
-let nomes: string[] = ['bonieky', 'pedro', 'luiz', 'igor'];  // string[]  vai definir q o array só irá receber strings
+function firstLetterUpperCase(name: string) {
+    let firstLetter = name.charAt(0).toUpperCase();
+    return firstLetter+name.substring(1);
+}
 
-let idades: number[] = [90, 15, 20, 30]; // number[] vai definir q o array só ira receber number
+firstLetterUpperCase('igor');
