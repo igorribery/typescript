@@ -1,7 +1,13 @@
-/* let idadeField = document.getElementById('idade');
+interface opcoes {
+    width: number;
+    height: number;
+}
 
-console.log(idadeField.value); */
+function configurar(props: opcoes | 'auto') {
 
-let idadeField = document.getElementById('idade') as HTMLInputElement;
+}
 
-console.log(idadeField.value);
+
+configurar({width: 100, height: 200});
+configurar('auto');
+configurar('automatico')  // erro
