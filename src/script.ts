@@ -1,13 +1,10 @@
-interface opcoes {
-    width: number;
-    height: number;
-}
-
-function configurar(props: opcoes | 'auto') {
+function fazerRequisicao(url: string, method: 'GET' | 'POST') {
 
 }
+type RequestDetails = {
+    url: string,
+    method: 'GET' | 'POST'
+};
 
-
-configurar({width: 100, height: 200});
-configurar('auto');
-configurar('automatico')  // erro
+let req: RequestDetails = { url: "https://google.com.br", method: 'GET' };
+fazerRequisicao(req.url, req.method);
