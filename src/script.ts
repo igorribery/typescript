@@ -1,24 +1,7 @@
-/* type User = {
-    nome: string,
-    idade: number
-}; */
+/* let idadeField = document.getElementById('idade');
 
-// usando o type uma vez q tu o criou ele não é alterável não tem como adicionar propriedades novas e com interface sim
+console.log(idadeField.value); */
 
-interface User {
-    nome: string
-}
+let idadeField = document.getElementById('idade') as HTMLInputElement;
 
-// pode fazer isso e o type não
-interface User {
-    idade: number
-}
-
-function resumo(usuario: User) {
-    return `Olá ${usuario.nome}, você tem ${usuario.idade} anos`;
-}
-
-resumo({
-    nome: 'Bonieky',
-    idade: 30
-});
+console.log(idadeField.value);
