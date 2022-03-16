@@ -1,17 +1,8 @@
-type MathFunction = (n1: number, n2: number) => number;
+const nome: string = 'Bonieky';
 
-const somar: MathFunction = (n1, n2) => {
-    return n1 + n2;
+function alo(n1: number): string {
+    return 'O parâmetro era: '+n1;
 }
+alo(15);
 
-const subtrair: MathFunction = (n1, n2) => {
-    return n1 - n2;
-}
-
-const multiplicar: MathFunction = (n1, n2) => {
-    return n1 * n2;   
-}
-
-const dividir: MathFunction = (n1, n2) => {
-    return n1 / n2;
-}
+// no terminal~   tsc src/script.ts -w "watchMode"
