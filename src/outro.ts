@@ -1,1 +1,1 @@
-let numero: number = 10;
+const idade: number = 20;
